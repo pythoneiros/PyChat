@@ -22,7 +22,7 @@ while True:
     texto = raw_input('Você: ')
 
     while not texto:
-      print 'Digite algo..'
+      print '\n Ei.. digite algo! \n'
       texto = raw_input('Você: ')
 
     if texto == '#sair' or texto == '#exit' or texto == '#close':
