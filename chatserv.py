@@ -1,11 +1,10 @@
 #-*- coding:utf-8 -*-
-nomecompleto = "Gabriel Masson"
 
 # --------------------------------------
 # Informações
 # --------------------------------------
 
-nomecompleto = "Gabriel Masson"
+nomecompleto = "SEU NOME"
 arquivo_chat = "chat/chat.txt"
 
 
