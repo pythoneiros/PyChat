@@ -1,12 +1,15 @@
 #-*- coding:utf-8 -*-
 
+import os
 # --------------------------------------
 # Informações
 # --------------------------------------
 
-nomecompleto = "SEU NOME"
-arquivo_chat = "chat/chat.txt"
+arquivo_chat = os.path.join("chat","chat.txt")
 
+comandos_sair = ['#sair','#exit','#close',"#exit","#quit"]
+
+nomecompleto = raw_input('Digite seu nome: ').capitalize()
 
 # --------------------------------------
 # Código
@@ -25,9 +28,11 @@ while True:
       print '\n Ei.. digite algo! \n'
       texto = raw_input('Você: ')
 
-    if texto == '#sair' or texto == '#exit' or texto == '#close':
+    if texto in comandos_sair:
       chat.write('\n'+nomecompleto+' saiu do batepapo \n')
       print '\n Você saiu do batepapo. \n'
       break
     else:
-      chat.write(nomecompleto+': '+texto+'\n')
+      chat.write(nomecompleto+' disse: '+texto+'\n')
+
+
