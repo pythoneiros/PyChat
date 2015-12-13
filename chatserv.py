@@ -5,7 +5,7 @@ import os
 # Informações
 # --------------------------------------
 
-arquivo_chat = os.path.join("chat","chat.txt")
+arquivo_chat = os.path.join("chat","historic.txt")
 
 comandos_sair = ['#sair','#exit','#close',"#exit","#quit"]
 
