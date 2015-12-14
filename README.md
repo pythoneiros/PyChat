@@ -1,7 +1,7 @@
 # ChatServ
 Chat para intranet desenvolvido em Python
 
-***Nível: Básico***
+    Nível: Básico
 
 
 ### Como usar
