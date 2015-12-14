@@ -1,8 +1,6 @@
 # ChatServ
 Chat para intranet desenvolvido em Python
 
-***OBS:*** Baseado no algoritmo do [@marlysson](https://github.com/pythoneiros/Exercicios/blob/master/Exercicio-3/Marlysson/exercicio.py) ;)
-
 ***Nível: Básico***
 
 
@@ -33,3 +31,7 @@ Para visualizar a conversa você precisa executar o arquivo do histórico no seu
 
 
 ***OBS: O arquivo de histórico deve ser indicado na variavel*** ```$conversa = "historic-1.html";``` ***localizada dentro do arquivo*** ```view.php```
+
+
+-------------------------
+Baseado no algoritmo do [@marlysson](https://github.com/pythoneiros/Exercicios/blob/master/Exercicio-3/Marlysson/exercicio.py) ;)
