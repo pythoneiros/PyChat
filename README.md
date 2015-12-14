@@ -12,7 +12,7 @@ Após o Download, execute o arquivo ```chatserv.py``` no terminal usando o segui
 
 
 ### Configurando
-Todos os históricos são salvos por padrão na pasta ```/chat```, entretanto caso você queira conversar em grupo dentro de uma rede local copie a pasta em um servidor web dentro da sua rede, em seguida altere a variavel ```servidor_chat = "chat"``` para o endereço da pasta compartilhada do servidor, exemplo:
+Todos os históricos são salvos por padrão na pasta ```/chat```, entretanto caso você queira conversar em grupo dentro de uma rede local copie a pasta em uma pasta compartilhada do servidor da sua rede, em seguida altere a variavel ```servidor_chat = "chat"``` para o endereço da pasta compartilhada do servidor, exemplo:
 
     servidor_chat = "endereco_pasta_compartilhada/chat"
 
