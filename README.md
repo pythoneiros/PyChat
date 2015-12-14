@@ -16,14 +16,17 @@ Todos os históricos são salvos por padrão na pasta ```/chat```, entretanto ca
     servidor_chat = "http://192.168.0.1/chat"
 
 
-O nome do arquivo que irá salvar o histórico de sua conversa pode ser alterado na variavel ´´´arquivo_chat = "historic-1.html"´´´, também localizada dentro do arquivo ```chatserv.py```, exemplo:
+O nome do arquivo que irá salvar o histórico de sua conversa pode ser alterado na variavel ```arquivo_chat = "historic-1.html"```, também localizada dentro do arquivo ```chatserv.py```, exemplo:
 
     arquivo_chat = "conversa-equipe-x.html"
 
 
-*** OBS: *** O arquivo de histórico deve estar localizado no caminho do servidor indicado
+***OBS: O arquivo de histórico deve estar localizado no caminho do servidor indicado***
 
 ### Visualizando conversa
 Para visualizar a conversa você precisa executar o arquivo do histórico no seu navegador, ou para melhor vizualização e caso esteja dentro de um servidor com APACHE e PHP execute o arquivo ```view.php``` localizado dentro da pasta ```/chat```, exemplo:
 
     http://192.168.0.1/chat/view.php
+
+
+***OBS: O arquivo de histórico deve ser indicado na variavel*** ```$conversa = "historic-1.html";``` ***localizada dentro do arquivo*** ```view.php```
