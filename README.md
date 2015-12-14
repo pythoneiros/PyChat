@@ -3,6 +3,9 @@ Chat para intranet desenvolvido em Python
 
 ***OBS:*** Baseado no algoritmo do [@marlysson](https://github.com/pythoneiros/Exercicios/blob/master/Exercicio-3/Marlysson/exercicio.py) ;)
 
+***Nível: Básico***
+
+
 ### Como usar
 
 Após o Download, execute o arquivo ```chatserv.py``` no terminal usando o seguinte comando:
