@@ -12,9 +12,9 @@ Após o Download, execute o arquivo ```chatserv.py``` no terminal usando o segui
 
 
 ### Configurando
-Todos os históricos são salvos por padrão na pasta ```/chat```, entretanto caso você queira conversar em grupo dentro de uma rede local copie a pasta em um servidor web dentro da sua rede, em seguida altere a variavel ```servidor_chat = "chat"``` para o endereço e caminho do servidor, exemplo:
+Todos os históricos são salvos por padrão na pasta ```/chat```, entretanto caso você queira conversar em grupo dentro de uma rede local copie a pasta em um servidor web dentro da sua rede, em seguida altere a variavel ```servidor_chat = "chat"``` para o endereço da pasta compartilhada do servidor, exemplo:
 
-    servidor_chat = "http://192.168.0.1/chat"
+    servidor_chat = "endereco_pasta_compartilhada/chat"
 
 
 O nome do arquivo que irá salvar o histórico de sua conversa pode ser alterado na variavel ```arquivo_chat = "historic-1.html"```, também localizada dentro do arquivo ```chatserv.py```, exemplo:
@@ -30,7 +30,7 @@ Para visualizar a conversa você precisa executar o arquivo do histórico no seu
     http://192.168.0.1/chat/view.php
 
 
-***OBS: O arquivo de histórico deve ser indicado na variavel*** ```$conversa = "historic-1.html";``` ***localizada dentro do arquivo*** ```view.php```
+***OBS: O endereço do arquivo de histórico deve ser indicado na variavel*** ```$conversa = "historic-1.html";``` ***localizada dentro do arquivo*** ```view.php```
 
 
 -------------------------
