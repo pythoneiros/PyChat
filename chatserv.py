@@ -1,26 +1,38 @@
 #-*- coding:utf-8 -*-
 
-import os
 # --------------------------------------
-# Informações
+# ChatServ
+# Chat para intranet
+# https://github.com/pythoneiros/ChatServ
+# Licença MIT
 # --------------------------------------
 
-arquivo_chat = os.path.join("chat","historic.txt")
+# Servidor de Históricos
+servidor_chat = "chat"
 
+# Arquivo da conversa
+arquivo_chat = "historic-1.html"
+
+# Conversa
+caminho_chat = servidor_chat+'/'+arquivo_chat
+
+# Comandos para sair
 comandos_sair = ['#sair','#exit','#close',"#exit","#quit"]
 
+# Entrada do nome
 nomecompleto = raw_input('Digite seu nome: ').capitalize()
 
-# --------------------------------------
-# Código
-# --------------------------------------
+# Cor do usuário
+from random import randrange
+cor = str(randrange(0, 8))
 
-entrou = open(arquivo_chat,'a')
-entrou.write('\n'+nomecompleto+' entrou no batepapo \n\n')
+# Código do batepapo
+entrou = open(caminho_chat,'a')
+entrou.write('\n<p><span  class="aviso"><strong>'+nomecompleto+'</strong> entrou no chat </span></p> \n\n')
 entrou.close()
 
 while True:
-  with open(arquivo_chat,'a') as chat:
+  with open(caminho_chat,'a') as chat:
 
     texto = raw_input('Você: ')
 
@@ -29,10 +41,10 @@ while True:
       texto = raw_input('Você: ')
 
     if texto in comandos_sair:
-      chat.write('\n'+nomecompleto+' saiu do batepapo \n')
-      print '\n Você saiu do batepapo. \n'
+      chat.write('\n<p><span  class="aviso"><strong>'+nomecompleto+'</strong> saiu do chat</span></p> \n')
+      print '\n Você saiu do chat, sua conversa foi salva em: '+caminho_chat+' \n'
       break
     else:
-      chat.write(nomecompleto+' disse: '+texto+'\n')
+      chat.write('<p><span class="cor'+cor+'">'+nomecompleto+' disse:</span> '+texto+'<p>\n')
 
 
