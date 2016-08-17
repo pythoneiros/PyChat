@@ -34,4 +34,4 @@ Para visualizar a conversa você precisa executar o arquivo do histórico no seu
 
 
 -------------------------
-Baseado no algoritmo do [@marlysson](https://github.com/pythoneiros/Exercicios/blob/master/Exercicio-3/Marlysson/exercicio.py) ;)
+Baseado no algoritmo do [@marlysson](https://github.com/pythoneiros/Exercicios/blob/master/exercicio-3/Marlysson/exercicio.py) ;)
